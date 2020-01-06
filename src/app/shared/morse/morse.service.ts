@@ -11,7 +11,10 @@ export class morseService {
     return this.http.get('http://localhost:8080/human?words=holameli');
   }
 
-   getAllMorse(binarycode:string): Observable<any> {
+ /*  getAllMorse(binarycode:string): Observable<any> {
     return this.http.get('http://localhost:8080/translate2human?binary=' + binarycode);
+  }*/
+  getAllMorse(binarycode:string): Observable<any> {
+    return this.http.get('http://20200106t015024-dot-gcservice.appspot.com/translate2human?binary=' + binarycode);
   }
 }
