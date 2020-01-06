@@ -1,0 +1,82 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+    <title>Morse</title>
+  </head>
+  
+  <body>
+      <div style="text-align:center">
+      
+      <h1>
+          Emulador Morse Online  
+      </h1>
+    </div>
+    <div class="section">
+      <div class="box">
+      <h5>
+        -Pulsar el boton para iniciar un pulso morse, volver a pulsar para frenarlo.
+       
+        <br /><br />
+        -6 segundos sin actividad, finalizaran el mensaje y los resultados serán expuestos.
+      <br /><br />
+        pulsos (1):            
+        <br />
+        - 1 ~ 3 => '.'
+        <br />
+        - 4 ~ 10 => '-'
+         <br /><br />
+        silencios (0):            
+        <br />
+        - 1 ~ 3 => corte del pulso
+        <br />
+        - 4 ~ 7 => corte del caracter
+        <br />
+        - 7 ~ 11 => corte de la palabra
+        <br />
+        - 12 => fin del mensaje
+      </h5>
+      </div>
+    </div>
+
+
+    <div class="section">
+       <div class="box">
+        <button (click)='observerTimer()' 
+                (click)='isPressed=isPressed+1' 
+                id="tapbutton" 
+                style="background-color:#f14e4e">
+                TAP</button>
+      </div>
+      <div class="box">
+        <label>
+          <b>Binario</b>
+          <br />
+          <textarea rows="1"  readonly>{{bin}}</textarea>
+        </label>
+      </div>
+    </div>
+
+    <div class="section">
+     <div class="box">
+        <label>
+          <b>Morse</b>
+          <br />
+          <textarea rows="1" readonly>{{morses.morse}}</textarea>
+        </label>
+      </div>
+    </div>
+
+
+    <div class="section">
+
+      <div class="box">
+        <label>
+          <b>Español</b>
+          <br />
+          <textarea rows="1" readonly>{{morses.human}}</textarea>
+        </label>
+      </div>
+     </div>
+
+
+    
+  </body>

@@ -1,34 +1,159 @@
-      input {
-        width: 50px;
-      }
-      textarea {
-        width: 80%;
-        height: 45px;
-      }
-      #textarea2 {
-        width: 10%;
-        height: 17px;
-        }
-      .section {
-        margin-top: 30px;
-        width: 100%;
-      }
-      .box {
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
-      #footer {
-        text-align: right;
-      }
-      #tapbutton {
-        font-size: 36pt;
-         color:white;
-         width: 35%;
-         margin-bottom: 5px;
-      }
-      body {
-       background-image: url("https://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood-background-2.jpg");
-      background-size: 500px;
-      }
-     h5 { font-family: "Times New Roman", Times, serif; }
-     
+@charset "utf-8";
+/* CSS Document */
+body {
+  /*background-image: url("../images/265244_a9d6b.png");*/
+	background-color: #F0DBBC;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; }
+
+a {
+  text-decoration: none; }
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
+  /*background-color:#F8F9FA;*/
+	background-image:url(images/269.jpg);
+	
+	
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-family: 'Cute Font', cursive;
+	font-size: 50px;
+	font-weight: 400;
+	
+}
+
+.container1{
+	margin-top: 0px;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+	margin-top: 0px;
+  
+}
+
+.jumbotron .container1 h1{
+	margin-top: 0px;
+}
+
+footer {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+footer a {
+  color:darkgray;
+	font-family: 'Cute Font', cursive;
+	font-size: 25px;
+	font-weight: 10;
+	
+}
+
+.btn a{
+	color: white;
+}
+
+form label {
+	font-size: 28px;
+	font-weight: 500;
+	color: black;
+	display: block;
+	text-align: center;
+	font-family: 'Cute Font', cursive;
+	text-transform: uppercase; 
+	margin-top: 20px;
+}
+ 
+
+textarea {
+	font-family: 'Cute Font', cursive;
+	font-size: 25px;
+	color: #000;
+	background-color: #FFF;
+	height: 120px;
+	width: 350px;
+	margin-bottom: 10px;
+	border: 2px solid #4A300E;
+	
+}
+
+#botones #Reestablecer{
+	
+	background-color:#312F2F;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: block;
+	border: 1px solid #1A1A1A;
+	
+}
+
+#botones #pulsar{
+	
+	/*background-color:#312F2F;*/
+	background-image:url(images/buton5.png);
+	background-position: center;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	display: block;
+	border: 1px solid #1A1A1A;
+	margin-top: 10px;
+	
+	
+}
+
+#botones{
+	width: 200px;
+	height: 100px;
+	margin-left: 100px;
+	
+}
+/*#botones ul{
+	width: 150px;
+	height: 150px;
+}
+
+#botones ul li {
+	
+	float: left;
+	list-style-type: none;
+	margin-top: 10px;
+	text-align: center;
+	width: 580px;
+}
+
+ul{
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}*/
+
+li{
+	
+	margin-top: 5px;
+	color:black;
+	font-weight: 200;
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
